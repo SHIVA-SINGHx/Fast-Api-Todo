@@ -3,3 +3,4 @@ uvicorn
 sqlAlchemy
 psycopg2
 pydantic
+python-dotenv
