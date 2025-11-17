@@ -10,4 +10,4 @@ app.include_router(router)
 
 @app.get("/")
 def home():
-    return {"message": "Todo API is Running 🚀"}
+    return {"message": "Todo API is Running..."}

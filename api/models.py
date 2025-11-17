@@ -1,9 +1,10 @@
-from sqlalchemy import Column, Integer, String, Boolean
 from database import Base
+from sqlalchemy import Column, String, Boolean, Integar
 
 class Todo(Base):
     __tablename__ = "todos"
-
-    id = Column(Integer, primary_key=True, index=True)
-    task = Column(String, nullable=False)
-    completed = Column(Boolean, default=False)
+    
+    id = Column(Integar, primary_key=True, index=True)
+    task= Column(String, nullable= False,)
+    description = Column(String, default = False)
+    completed= Column(Boolean, default= False)
