@@ -2,11 +2,12 @@ from sqlalchemy.orm import Session
 from .. import models, schema
 
 def create_todo(db: Session, data: schema.TodoCreate):
-    todo = models.Todo(task=data.task, description=data.description)
+    todo = models.Todo(task=data.task, description=data.description, completed = data.completed)
     db.add(todo)
     db.commit()
     db.refresh(todo)
     return todo
+
 
 def get_all_todos(db: Session):
     return db.query(models.Todo).all()

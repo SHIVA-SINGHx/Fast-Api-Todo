@@ -8,3 +8,6 @@ class Todo(Base):
     task= Column(String, nullable= False,)
     description = Column(String, default = False)
     completed= Column(Boolean, default= False)
+    
+
+    
